@@ -12,3 +12,13 @@ DIR 00;34 # directory
 LINK 00;36 # symbolic link.
 
 run /usr/bin/dircolors -p > your_dir_colors_file
+
+in .bashrc 
+
+changed to [00;32m\] and [00;34m\] from [01;32m\] and [01;34m\]
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h\[\033[00m\]:\[\033[00;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
