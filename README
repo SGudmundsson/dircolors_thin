@@ -4,4 +4,11 @@ This repository has two files:
 
 .dircolors .bashrc
 
-for the purpose of changing directory fonts to normal from bold. Changed code for example di=01;34 -> di=00;34. In dircolors the code prefixing the color code is 00 for normal or none, 01 for bold.
+for the purpose of changing directory fonts to normal from bold. Changed code for example DIR 01;34 -> DIR 00;34. In dircolors the code prefixing the color code is 00 for normal or none, 01 for bold.
+
+example 
+
+DIR 00;34 # directory
+LINK 00;36 # symbolic link.
+
+run /usr/bin/dircolors -p > your_dir_colors_file
