@@ -1,0 +1,7 @@
+Welcome to the dircolors_thin wiki!
+
+This repository has two files:
+
+.dircolors .bashrc
+
+for the purpose of changing directory fonts to normal from bold. Changed code for example di=01;34 -> di=00;34. In dircolors the code prefixing the color code is oo for normal or none, 01 for bold.
